@@ -2,66 +2,61 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Mercado Da Agua Ltda</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI', Arial, sans-serif;background:#0d0d0d;color:#f0ead6;line-height:1.6}
-header{background:#0d0d0d;border-bottom:1px solid #7a6020;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:10}
-.logo{font-family:Garamond, Georgia, serif;font-size:.95rem;font-weight:700;color:#c9a227;letter-spacing:.04em}
-nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#a09060;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
-nav a:hover{color:#c9a227}
-.hero{padding:100px 48px 80px;max-width:900px}
-.hero-tag{display:inline-block;border:1px solid #7a6020;color:#c9a227;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 16px;margin-bottom:32px}
-.hero h1{font-family:Garamond, Georgia, serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:24px;color:#f0ead6}
-.hero h1 em{color:#c9a227;font-style:normal}
-.hero-desc{font-size:1.1rem;color:#a09060;max-width:600px;margin-bottom:40px;line-height:1.8}
-.hero-cta{display:inline-block;background:#c9a227;color:#0d0d0d;padding:16px 40px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
-.hero-cta:hover{background:#7a6020;color:#f0ead6}
-.divider{border:none;border-top:1px solid #7a6020;margin:0 48px}
-.section{padding:72px 48px;max-width:960px;margin:0 auto}
-.sec-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a227;margin-bottom:12px}
-.sec-h2{font-family:Garamond, Georgia, serif;font-size:1.8rem;font-weight:700;color:#f0ead6;margin-bottom:48px}
-.srv-item{display:flex;gap:32px;align-items:flex-start;padding:28px 0;border-bottom:1px solid #7a6020}
-.srv-item:last-child{border-bottom:none}
-.srv-n{font-family:Garamond, Georgia, serif;font-size:3rem;font-weight:700;color:#7a6020;min-width:72px;line-height:1;letter-spacing:-.02em}
-.srv-item h4{font-family:Garamond, Georgia, serif;font-size:1.05rem;font-weight:700;color:#c9a227;margin-bottom:8px}
-.srv-item p{font-size:.9rem;color:#a09060;line-height:1.7}
-.sobre-sec{background:#141414;padding:72px 48px;margin-top:0}
-.sobre-inner{max-width:900px;margin:0 auto}
-.sobre-inner p{color:#a09060;line-height:1.9;margin-bottom:16px;font-size:.98rem}
-.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;margin-top:48px;border:1px solid #7a6020}
-.meta-cell{padding:20px 24px;border-right:1px solid #7a6020}
-.meta-cell:last-child{border-right:none}
-.meta-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#c9a227;margin-bottom:4px}
-.meta-value{font-size:.92rem;color:#f0ead6;font-weight:600}
-.contato-sec{padding:72px 48px;max-width:960px;margin:0 auto}
-.contato-inner{border-left:2px solid #c9a227;padding-left:32px;max-width:500px}
-.contato-inner p{color:#a09060;margin-bottom:12px;font-size:.95rem;line-height:1.7}
-.contato-inner a{color:#c9a227;text-decoration:none}
-footer{background:#141414;border-top:1px solid #7a6020;padding:24px 48px;display:flex;justify-content:space-between;font-size:.78rem;color:#5a4a20}
-@media(max-width:600px){.hero{padding:60px 24px}.section,.contato-sec{padding:48px 24px}nav{display:none}.srv-n{font-size:2rem;min-width:48px}}
+body{font-family:Arial, sans-serif;background:#f5f5f5;color:#333;line-height:1.6}
+header{background:#1a3a5c;color:white;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+header h1{font-family:Georgia, 'Times New Roman', serif;font-size:1.1rem;font-weight:700}
+nav ul{list-style:none;display:flex;gap:28px}
+nav a{color:#a8c4e0;text-decoration:none;font-size:.9rem;transition:color .2s}
+nav a:hover{color:white}
+.hero{background:linear-gradient(135deg, #0f2540 0%, #1a3a5c 55%, #2d6a9f 100%);color:white;padding:88px 32px;text-align:center}
+.hero-inner{max-width:700px; margin:0 auto;}
+.hero-eyebrow{font-size:.8rem;letter-spacing:.15em;color:#7ab8e8;text-transform:uppercase;margin-bottom:20px}
+.hero h2{font-family:Georgia, 'Times New Roman', serif;font-size:2.3rem;font-weight:700;margin-bottom:18px;line-height:1.25}
+.hero h2 em{color:#7ab8e8;font-style:normal}
+.hero p{color:#cde4f5;max-width:620px;margin:0 auto 32px;margin-bottom:32px;font-size:1.05rem}
+.hero-cta{display:inline-block;background:#2d6a9f;color:white;padding:14px 32px;border-radius:6px;text-decoration:none;font-weight:600;transition:background .2s}
+.hero-cta:hover{background:#3a82bf}
+.hero-since{margin-top:18px;font-size:.85rem;color:#7ab8e8}
+.section{max-width:960px;margin:72px auto;padding:0 32px}
+.section-header{margin-bottom:40px}
+.section-eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#2d6a9f;font-weight:700;margin-bottom:8px}
+.section-header h2{font-family:Georgia, 'Times New Roman', serif;font-size:1.75rem;color:#1a3a5c}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px}
+article{background:white;border-radius:10px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,.07);border-top: 3px solid #2d6a9f}
+.srv-icon{font-size:1.8rem;margin-bottom:12px}
+article h4{font-family:Georgia, 'Times New Roman', serif;font-size:1rem;color:#1a3a5c;margin-bottom:8px}
+article p{font-size:.9rem;color:#666;line-height:1.65}
+.section p{color:#555;margin-bottom:14px;line-height:1.85}
+.stats-table{width:100%;border-collapse:collapse;margin-top:28px;background:white;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.stats-table td{padding:14px 20px;border-bottom:1px solid #eee;font-size:.93rem}
+.stats-table tr:last-child td{border-bottom:none}
+.stats-table td:first-child{color:#1a3a5c;font-weight:600;width:220px}
+.contato-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:28px}
+.contato-item{background:white;border-radius:10px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.contato-item h4{color:#1a3a5c;margin-bottom:8px;font-size:.95rem}
+.contato-item a{color:#2d6a9f;text-decoration:none;font-size:.95rem}
+address{background:white;border-radius:10px;padding:20px 24px;box-shadow:0 2px 10px rgba(0,0,0,.07);font-style:normal;font-size:.93rem;color:#555;line-height:1.8}
+address strong{color:#1a3a5c}
+footer{background:#0f2540;color:#5a7a9a;text-align:center;padding:32px;font-size:.82rem;margin-top:80px}
+footer p+p{margin-top:6px}
+@media(max-width:600px){nav{display:none}.hero h2{font-size:1.6rem}.hero{padding:60px 24px}}
 </style></head><body>
-<header><span class="logo">Mercado Da Agua Ltda</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
-<div id="hero" class="hero">
-  <div class="hero-tag">Água · Poços · Sustentabilidade</div>
-  <h1>Soluções de <em>água</em> para sua <em>propriedade</em></h1>
-  <p class="hero-desc">A Mercado Da Agua Ltda oferece serviços especializados em perfuração e construção de poços de água para residências, propriedades rurais e empreendimentos em Porto Alegre e região. Com expertise técnica e compromisso com qualidade, garantimos acesso confiável à água.</p>
-  <a href="#contato" class="hero-cta">Converse com especialistas</a>
+<header><h1>Mercado Da Agua Ltda</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<section id="hero" class="hero"><div class="hero-inner">
+  <p class="hero-eyebrow">Água · Poços · Confiabilidade</p>
+  <h2>Soluções de <em>água</em> para sua <em>propriedade</em></h2>
+  <p>A Mercado Da Agua Ltda oferece serviços especializados em perfuração e construção de poços de água de alta qualidade. Atendemos residências, propriedades rurais e empreendimentos em Porto Alegre e região com expertise técnica comprovada.</p>
+  <a href="#contato" class="hero-cta">Falar com um consultor</a>
+  <p class="hero-since"><strong>Desde 1995</strong></p>
+</div></section>
+<div id="servicos" class="section"><div class="section-header"><p class="section-eyebrow">O que fazemos</p><h2>Nossas especialidades</h2></div><div class="services-grid"><article><div class="srv-icon">📊</div><h4>Perfuração de Poços</h4><p>Perfuração profissional com equipamentos modernos para captação de água subterrânea segura e eficiente.</p></article><article><div class="srv-icon">🤝</div><h4>Construção de Poços</h4><p>Construção completa de poços adequados às características geológicas da região de Porto Alegre.</p></article><article><div class="srv-icon">💼</div><h4>Manutenção e Limpeza</h4><p>Serviços de manutenção preventiva e limpeza para garantir a qualidade contínua da água.</p></article><article><div class="srv-icon">🔍</div><h4>Consultoria Técnica</h4><p>Análise de viabilidade e orientação especializada para melhor solução hídrica da sua propriedade.</p></article></div></div>
+<div id="sobre" class="section"><div class="section-header"><p class="section-eyebrow">Sobre a empresa</p><h2>Uma empresa focada no que importa</h2></div><p>A Mercado Da Agua Ltda é especialista em soluções de água em Porto Alegre, com experiência consolidada em perfuração e construção de poços. Nosso compromisso é fornecer acesso à água de qualidade de forma segura e sustentável para residências e propriedades rurais.</p><p>Utilizamos tecnologia adequada e equipes treinadas para cada projeto, respeitando as normas técnicas e ambientais. Nosso diferencial está na atenção personalizada e na garantia de qualidade em cada poço que construímos.</p><table class="stats-table"><tr><td><strong>RS</strong></td><td>Rio Grande do Sul</td></tr><tr><td><strong>✅</strong></td><td>Situação Ativa</td></tr><tr><td><strong>Razão Social</strong></td><td>Mercado Da Agua Ltda</td></tr><tr><td><strong>CNPJ</strong></td><td>00.388.031/0001-61</td></tr><tr><td><strong>Situação Cadastral</strong></td><td>✅ Ativa desde 1995-01-12</td></tr></table></div>
+<div id="contato" class="section"><div class="section-header"><p class="section-eyebrow">Fale conosco</p><h2>Entre em contato</h2></div><p>Estamos prontos para ouvir sobre os desafios do seu negócio.</p>
+<div class="contato-grid" style="margin-top:24px">
+  
+  
 </div>
-<hr class="divider">
-<div id="servicos" class="section"><p class="sec-label">Expertise</p><h2 class="sec-h2">Nossas especialidades</h2><div class="srv-item"><span class="srv-n">01</span><div><h4>Perfuração de Poços</h4><p>Serviço completo de perfuração utilizando equipamentos modernos e técnicas avançadas para alcançar fontes de água subterrânea.</p></div></div><div class="srv-item"><span class="srv-n">02</span><div><h4>Construção de Poços</h4><p>Execução profissional da construção de poços com acabamento de qualidade e estrutura duradoura.</p></div></div><div class="srv-item"><span class="srv-n">03</span><div><h4>Manutenção e Limpeza</h4><p>Serviços de manutenção preventiva e limpeza de poços para garantir água de melhor qualidade.</p></div></div><div class="srv-item"><span class="srv-n">04</span><div><h4>Consultoria Técnica</h4><p>Avaliação especializada do solo e recomendações técnicas para otimizar a captação de água subterrânea.</p></div></div></div>
-<div id="sobre" class="sobre-sec"><div class="sobre-inner">
-  <p class="sec-label">Sobre a empresa</p><h2 class="sec-h2">Quem somos</h2>
-  <p>A Mercado Da Agua Ltda atua há anos na perfuração e construção de poços de água em Porto Alegre e entorno. Nossa equipe de profissionais qualificados utiliza tecnologia de ponta para entregar soluções eficientes e sustentáveis.</p><p>Diferenciamo-nos pelo atendimento personalizado, execução dentro do prazo e garantia da qualidade em cada projeto. Seu acesso à água é nossa responsabilidade e compromisso.</p>
-  <div class="meta-grid">
-    <div class="meta-cell"><div class="meta-label">Razão Social</div><div class="meta-value">Mercado Da Agua Ltda</div></div>
-    <div class="meta-cell"><div class="meta-label">CNPJ</div><div class="meta-value">00.388.031/0001-61</div></div>
-    <div class="meta-cell"><div class="meta-label">Estado</div><div class="meta-value">Rio Grande do Sul</div></div>
-    <div class="meta-cell"><div class="meta-label">Fundação</div><div class="meta-value">1995</div></div>
-  </div>
-</div></div>
-<div id="contato" class="contato-sec"><p class="sec-label">Fale conosco</p><h2 class="sec-h2">Fale conosco</h2>
-<div class="contato-inner">
-  <p>Atendimento reservado e personalizado.</p>
-  <p><strong>Endereço:</strong> R. Sao Manoel, 1558, Rio Branco, Porto Alegre — RS, CEP 90620-110</p>
-</div></div>
-<footer><span>Mercado Da Agua Ltda · CNPJ 00.388.031/0001-61</span><span>© 1995–2026 Mercado Da Agua Ltda</span></footer>
+<address><strong>Endereço:</strong><br>R. Sao Manoel, 1558, Rio Branco, Porto Alegre — RS, CEP 90620-110</address>
+</div>
+<footer><p>Mercado Da Agua Ltda</p><p>© 1995–2026 Mercado Da Agua Ltda. Todos os direitos reservados.</p><p>CNPJ 00.388.031/0001-61</p></footer>
 </body></html>
